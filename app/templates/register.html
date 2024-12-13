@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block content %}
+<h1>Registro</h1>
+<form
+  method="POST"
+  class="form-group"
+>
+  <label for="username">Usuário:</label>
+  <input
+    type="text"
+    name="username"
+  />
+  <label for="email">Email:</label>
+  <input
+    type="email"
+    name="email"
+  />
+  <label for="password">Senha:</label>
+  <input
+    type="password"
+    name="password"
+  />
+  <input
+    type="submit"
+    value="Registrar"
+  />
+</form>
+<p>Já tem uma conta? <a href="{{ url_for('login') }}">Faça login</a></p>
+{% endblock %}

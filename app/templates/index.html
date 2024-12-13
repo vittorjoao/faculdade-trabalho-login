@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block content %}
+<div class="index-container">
+  <h1>Bem vindo, {{ current_user.username }}!</h1>
+  <div class="index-logout-container">
+    <a
+      href="{{ url_for('logout') }}"
+      class="index-logout-button"
+      >Sair</a
+    >
+  </div>
+</div>
+{% endblock %}
